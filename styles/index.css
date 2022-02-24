@@ -1,0 +1,95 @@
+/* body {
+  background-color: aquamarine;
+} */
+#big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  /* justify-content: space-between; */
+}
+
+#left {
+  margin-top: 70px;
+  /* border: 1px solid black; */
+  width: 500px;
+  height: 90vh;
+}
+.twolines {
+  width: fit-content;
+  margin-top: 70px;
+}
+.topheading {
+  margin-top: 70px;
+}
+.one {
+  display: flex;
+  margin-top: 50px;
+}
+.two {
+  display: flex;
+}
+
+#right {
+  /* border: 1px solid black; */
+  width: 247px;
+  margin-left: 30px;
+
+  height: 90vh;
+}
+.gray {
+  color: #7c7e8c;
+  font-family: Roboto, system-ui;
+  line-height: 27px;
+}
+/* .headingline{
+    line-height: 1px;
+} */
+.headinggray {
+  /* line-height: 1px; */
+  color: #44475b;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 30px;
+  font-family: Roboto, system-ui;
+  letter-spacing: 0.004em;
+  font-weight: bolder;
+}
+.favicons {
+  padding-right: 20px;
+}
+
+.ioscards > img {
+  width: 260px;
+  height: 354px;
+  cursor: pointer;
+}
+.androidcards > img {
+  width: 260px;
+  height: 354px;
+  cursor: pointer;
+}
+#right {
+  display: grid;
+}
+
+.third {
+  /* border: 1px solid black; */
+  width: 300px;
+  margin-left: 40px;
+  height: 90vh;
+  /* ... */
+}
+.yellowcard > img {
+  margin-top: 200px;
+  width: 247px;
+  height: 354px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  #big {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
