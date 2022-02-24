@@ -1,10 +1,6 @@
-/*------------------------------------------ section 1 ---------------------------------------- */
 
-.hero-p1 {
-  padding: 2%;
-  margin: 2em auto;
-}
-.p1-options{
+/*------------------------------------------ section 1 ---------------------------------------- */
+.p1-options {
   display: flex;
   flex-direction: column;
 }
@@ -52,6 +48,8 @@
 }
 .text-animation h1 {
   padding: 0;
+  text-align: center;
+  margin: auto;
 }
 .text-animation {
   z-index: -1;
@@ -82,7 +80,7 @@
 small {
   font-size: 11px;
 }
-small a{
+small a {
   color: var(--text);
 }
 .google img {
@@ -120,6 +118,10 @@ small a{
 
 /*------------------------------------ media-query section 1 -------------------------------------------- */
 @media screen and (min-width: 480px) {
+  #main {
+    padding: 2%;
+    margin: 10vw;
+  }
   .p1-card a {
     font-size: 18px;
   }
@@ -127,14 +129,14 @@ small a{
     flex-direction: row;
     justify-content: space-around;
   }
-  .text-animation h1{
+  .text-animation h1 {
     text-align: left;
     font-size: 38px;
   }
-  .p1-left{
+  .p1-left {
     margin-top: 8em;
   }
-  .p1-card{
+  .p1-card {
     width: 165px;
     height: 125px;
     background: var(--primaryBg);
@@ -149,47 +151,163 @@ small a{
   #animate-text p:nth-child(6) {
     color: var(--secondaryClr);
   }
-  #animate-text p:nth-child(2){
+  #animate-text p:nth-child(2) {
     color: var(--growwRed);
   }
-  #animate-text p:nth-child(3){
+  #animate-text p:nth-child(3) {
     color: var(--constantGrowwYellow150);
   }
-  #animate-text p:nth-child(4){
+  #animate-text p:nth-child(4) {
     color: var(--growwYellow);
   }
 }
 
 /*------------------------------------ section 2----------------------------------------------- */
-.p2-options{
+
+.p2-title1 {
+  background: var(--subText70);
+  color: var(--text);
+  letter-spacing: 0.3px;
+  border: none;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: 500;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.p2-title2 {
+  color: var(--text);
+  letter-spacing: 0.2px;
+  font-weight: 500;
+}
+.p2-options {
   position: relative;
 }
-#p2-options-list{
+#tab-bar {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background: var(--primaryClr);
+  will-change: left, width;
+  transition: left 0.2s linear, width 0.2s linear;
+}
+#p2-options-list {
   position: absolute;
   top: 33vh;
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
+  width: 100%;
+  overflow-x: scroll;
 }
-#p2-options-list li{
-  width: 33%;
+#p2-options-list::-webkit-scrollbar{
+  display: none;
+}
+#p2-options-list li {
+  width: 44%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
-.p2-options-content{
+#p2-options-list li p{
+  width: 100px;
+}
+.p2-options-content {
   z-index: -1;
 }
-.p2-options-content img{
+.p2-options-content img {
   width: 100%;
 }
-
+.lower {
+  margin-top: 10vh;
+  text-align: center;
+  font-size: 1.2em;
+}
+.lower-title-1 {
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  font-size: 30px;
+  line-height: 94px;
+}
+.lower-title-1 span {
+  font-weight: 500;
+  font-size: 20px;
+}
+.lower .btn-primary{
+  margin-top: 5vh;
+}
+.lower-para {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--subText);
+  margin: 0 15px;
+  min-height: 80px;
+}
+.lower-green-btn {
+  font-weight: 700;
+  margin-top: 40px;
+}
 /*------------------------------------ media-query section 2 -------------------------------------------- */
 @media screen and (min-width: 480px) {
-  #p2-options-list img{
+  .p2-title1{
+    margin: 0;
+  }
+  #p2-options-list li{
+    width: 16%;
+  }
+  #p2-options-list li p{
+    width: 100px;
+  }
+  .p2-title2{
+  font-size: 36px;
+  text-align: left;
+  }
+  #p2-options-list img {
     color: var(--text);
   }
-  #p2-options-list:hover img, #p2-options-list:active img{
+  #p2-options-list:hover img,
+  #p2-options-list:active img {
     color: initial;
+  }
+  #p2-options-list {
+    position: static;
+  }
+  .p2-options-content > div {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+  }
+  .lower {
+    text-align: left;
+    margin-left: 90px;
+  }
+  .lower-para {
+    font-family: 700;
+    margin: 0;
+  }
+  .lower .btn-primary {
+    padding: 3% 4%;
+    font-size: 0.8em;
+  }
+  .p2-options-content img {
+    width: 562px;
+    height: 355px;
+    margin: auto;
+  }
+  .lower-title-1 {
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    font-size: 80px;
+    line-height: 94px;
+    margin-top: -35px;
+  }
+  .lower-title-1 span {
+    font-size: 2rem;
   }
 }

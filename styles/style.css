@@ -55,9 +55,13 @@ b{
     padding: 4% 14%;
     font-size: 1em;
     font-weight: 500;
+    border-radius: 5px;
+}
+.bbtm{
+    border-bottom: 5px solid var(--primaryClr);
 }
 .btn-primary:hover{
-    background-color: var(--primaryClr60);
+    background-color: #26d7ab;
 }
 .l-only{
     display: none;
