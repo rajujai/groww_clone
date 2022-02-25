@@ -1,0 +1,230 @@
+/* after login */
+#main {
+  width: 75vw;
+  margin: 0 auto;
+}
+.a1-options ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  width: 40%;
+}
+.a1-options ul li {
+  font-size: 18px;
+  line-height: 15px;
+  padding-bottom: 2%;
+  cursor: pointer;
+}
+.bbtm {
+  color: var(--primaryClr);
+}
+.emf-upper {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+.ae-card-list,
+.emf-title {
+  display: flex;
+  justify-content: space-between;
+}
+.emf-title {
+  margin-top: 5%;
+}
+.emf-title p {
+  height: fit-content;
+  padding: 0.5% 2.5%;
+  border-radius: 16px;
+  background: var(--primaryClr10);
+  text-transform: uppercase;
+  color: var(--primaryClr);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  font-size: 0.75em;
+}
+.ae-card {
+  box-shadow: 0 1px 7px 0 var(--boxShadow);
+  max-width: 165px;
+  min-height: 165px;
+  min-width: 100px;
+  width: 100%;
+  position: relative;
+  background: var(--cardBackground);
+  border-radius: 8px;
+  padding: 0 2%;
+  margin: 0 1%;
+  cursor: pointer;
+}
+.hc-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-top: 5%;
+}
+.hc-list2 {
+  margin-top: 10%;
+  background: var(--quaternaryBg);
+  padding: 6%;
+}
+.hc {
+  cursor: pointer;
+}
+.hc2:hover {
+  color: var(--primaryClr);
+}
+.hc h5 {
+  text-transform: uppercase;
+}
+.hc2 h5 {
+  font-weight: 400;
+  margin: 0;
+  margin-top: 5%;
+}
+.hc2 img {
+  width: 60px;
+}
+.ae-card:hover {
+  transition: transform 0.3s ease;
+  transform: perspective(5px) scale(1.01);
+}
+.ae-card img {
+  position: absolute;
+  left: 18px;
+  top: 12px;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  background: var(--constantWhite);
+}
+.ae-para1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.19px;
+  color: var(--text);
+  margin-top: 55px;
+}
+.ae-para2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--text);
+  margin-right: 7px;
+}
+.ae-para2 span {
+  opacity: 0.7;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--subText);
+}
+.emf-lower {
+  background: var(--quaternaryBg);
+  width: 70vw;
+  margin-top: 10vh;
+  margin-left: -15vw;
+  padding: 5vh 14.738vw;
+}
+.emf-lower .emf-title {
+  text-transform: uppercase;
+  margin-top: -2vh;
+}
+#emf-videos-thumb-list {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  text-align: center;
+  margin-top: 5vh;
+  padding-bottom: 4vh;
+}
+.emf-video-thumb {
+  max-width: 250px;
+  min-width: 100px;
+  min-height: 222px;
+  border-radius: 5px;
+  background: var(--primaryBg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 7px 0 var(--boxShadow);
+  border: 1px solid var(--border);
+}
+.emf-video-thumb:hover {
+  transform: perspective(5px) scale(1.02);
+}
+.emf-video-thumb img {
+  border-radius: 5px;
+  object-fit: cover;
+  width: 250px;
+  height: 160px;
+}
+#emf-videos-list > div > div {
+  background-color: var(--text130);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+#emf-videos-list iframe {
+  border: 3px solid var(--primaryBg);
+}
+.close-player-btn {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  position: absolute;
+  top: 26vh;
+  left: 69vw;
+  background: var(--primaryBg);
+  border-radius: 50%;
+  padding: 0.5%; 
+  cursor: pointer;
+}
+.fw500{
+    font-weight: 500;
+}
+.complete-setup{
+    text-align: center;
+    width: 80%;
+}
+.complete-setup > div{
+    width: 100%;
+    margin: 20%;
+    padding: 8%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 10px 0 var(--boxShadow);
+    background-color: var(--primaryBg);
+}
+.complete-setup img{
+    width: 80%;
+    margin: auto;
+    margin-bottom: -5%;
+}
+.complete-setup p{
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text);
+}

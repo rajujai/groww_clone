@@ -22,15 +22,29 @@
     --subText: #7c7e8c;
     --subText50: #b0b2ba;
     --subText70: #ecedef;
-    --firstBg: #fff;
-    --secondBg: #ecedef;
-    --thirdBg: #f6f6f7;
-    --preloaderBg: #F6F709;
+    --primaryBg: #fff;
+    --secondaryBg: #fff;
+    --tertiaryBg: #ecedef;
+    --quaternaryBg: #f6f6f7;
+    --preloaderBg: #f6f6f7;
     --rippleNormal: rgba(0,0,0,0.1);
+    --constantWhite: #fff;
+    --constantSecondaryClr10: #f6f6f7;
+    --cardBackground: #fff;
     --constantGrowwYellow150: #d2ab66;
 }
+:root [data-theme=dark] {
+    --secondaryClr150: #1e2232;
+    --constantGrowwYellow150: #d2ab66;
+    --constantText: #44475b;
+    --constantText120: #191c27;
+    --constantSubText10: #636464;
+    --constantTransparent: transparent;
+    --constantHalfTransparent: rgba(0,0,0,0.5);
+    --constantSecondaryClr180: #2a2a2a;
+}
 body{
-    background: var(--firstBg)!important;
+    background: var(--primaryBg)!important;
     color: var(--text)!important;
     margin: 0;
     box-sizing: border-box;
@@ -51,7 +65,7 @@ b{
     border: none;
     outline: none;
     background-color: var(--primaryClr);
-    color: var(--firstBg);
+    color: var(--primaryBg);
     padding: 4% 14%;
     font-size: 1em;
     font-weight: 500;
