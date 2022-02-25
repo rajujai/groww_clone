@@ -32,6 +32,7 @@
     --constantSecondaryClr10: #f6f6f7;
     --cardBackground: #fff;
     --constantGrowwYellow150: #d2ab66;
+    --secondaryClr150: #1e2232;
 }
 :root [data-theme=dark] {
     --secondaryClr150: #1e2232;
