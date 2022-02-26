@@ -1,0 +1,53 @@
+#footer {
+  color: var(--primaryBg);
+  background-color: var(--secondaryClr150);
+}
+.footer{
+  width: 75vw;
+  margin: 0 auto;
+}
+.footer-upper{
+  display: grid;
+  grid-template-columns: repeat(4,22%);
+  gap: 4%;
+  border-bottom: 1px solid var(--subText);
+}
+.footer-column {
+  padding: 20% 0;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.footer-title-row {
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0%;
+}
+.footer-row {
+  line-height: 200%;
+}
+.media-icons {
+  display: flex;
+}
+.media-icons > img {
+  padding: 3%;
+  width: 20%;
+}
+.footer-middle{
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-store{
+  display: flex;
+  margin-right: 2vw;
+}
+.footer-store img{
+  padding: 0 5%;
+}
+.footer .heart{
+  color: var(--growwRed);
+  font-size: 22px;
+}

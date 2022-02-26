@@ -1,75 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Groww - Online Demat, Trading and Direct Mutual Fund Investment in India
+    </title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/index-p.css" />
+    <link rel="stylesheet" href="/styles/index-a.css" />
+    <link rel="stylesheet" href="/styles/fd.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
   </head>
+
   <body>
-    <!-- big div  -->
+    <div id="main">
+      <section class="postLogin">
+        <div class="a1-options">
+          <div id="tab-bar"></div>
+          <ul id="a1-options-list">
+            <li id="stocks" class="bbtm">Stocks</li>
+            <li id="mutual">Mutual Funds</li>
+            <li id="fds">Fixed Deposits</li>
+            <li id="us">US Stocks</li>
+          </ul>
+          <div id="a1-options-content">
+            <div id="stocks">Stocks</div>
+            <div class="hide" id="mutual">
+              <div class="popular-funds">
+                <div class="emf-upper">
+                  <div>
+                    <div class="emf-title">
+                      <h2>Popular Funds</h2>
+                      <p>screener</p>
+                    </div>
+                    <div class="ae-card-list">
+                      <div class="ae-card">
+                        <img
+                          src="https://groww.in/images/partners/icici_groww.svg"
+                          class="ae-logo"
+                        />
+                        <p class="ae-para1">
+                          ICICI Prudential Technology Direct Plan Growth
+                        </p>
+                        <p class="ae-para2">
+                          37.7%
+                          <span>(3Y)</span>
+                        </p>
+                      </div>
+                      <div class="ae-card">
+                        <img
+                          src="https://groww.in/images/partners/axis_groww.svg"
+                          class="ae-logo"
+                        />
+                        <p class="ae-para1">
+                          Axis Small Cap Fund Direct Growth
+                        </p>
+                        <p class="ae-para2">
+                          33.1%
+                          <span>(3Y)</span>
+                        </p>
+                      </div>
+                      <div class="ae-card">
+                        <img
+                          src="https://groww.in/images/partners/tata_groww.svg"
+                          class="ae-logo"
+                        />
+                        <p class="ae-para1">
+                          Tata Digital India Fund Direct Growth
+                        </p>
+                        <p class="ae-para2">
+                          36.3%
+                          <span>(3Y)</span>
+                        </p>
+                      </div>
+                      <div class="ae-card">
+                        <img
+                          src="https://groww.in/images/partners/mirae_groww.svg"
+                          class="ae-logo"
+                        />
+                        <p class="ae-para1">
+                          Mirae Asset Tax Saver Fund Direct Growth
+                        </p>
+                        <p class="ae-para2">
+                          24.5%
+                          <span>(3Y)</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="emf-title">
+                      <h2>Handpicked Collections</h2>
+                    </div>
+                    <div class="hc-list">
+                      <div class="hc">
+                        <img src="/images/highReturns.svg" />
+                        <h5>high return</h5>
+                      </div>
+                      <div class="hc">
+                        <img src="/images/taxSaving.svg" />
+                        <h5>tax saving</h5>
+                      </div>
+                      <div class="hc">
+                        <img src="/images/betterThanFd.svg" />
+                        <h5>better than fd</h5>
+                      </div>
+                      <div class="hc">
+                        <img src="/images/topCompanies.svg" />
+                        <h5>top companies</h5>
+                      </div>
+                      <div class="hc">
+                        <img src="/images/sip.svg" />
+                        <h5>sip with ₹500</h5>
+                      </div>
+                      <div class="hc">
+                        <img src="/images/sectorBets.svg" />
+                        <h5>sector bets</h5>
+                      </div>
+                    </div>
+                    <div class="hc-list hc-list2">
+                      <div class="hc hc2">
+                        <img
+                          src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/trackFunds.167a4592.svg"
+                        />
+                        <h5>import funds</h5>
+                      </div>
+                      <div class="hc hc2">
+                        <img
+                          src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/smartSave.f7dcdade.svg"
+                        />
+                        <h5>smart save</h5>
+                      </div>
+                      <div class="hc hc2">
+                        <img
+                          src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/switchToDirect.7fd53b74.svg"
+                        />
+                        <h5>switch to direct</h5>
+                      </div>
+                      <div class="hc hc2">
+                        <img
+                          src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/nfo.de1de2e8.svg"
+                        />
+                        <h5>live nfo</h5>
+                      </div>
+                      <div class="hc hc2">
+                        <img
+                          src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/compare.8e809fba.svg"
+                        />
+                        <h5>compare funds</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="complete-setup">
+                    <div>
+                      <img
+                        src="https://assets-netstorage.groww.in/app-assets/others/account_setup.png"
+                        alt=""
+                      />
+                      <p class="fw500">Attention required!</p>
+                      <p>
+                        Complete setting up your account to start investing on
+                        Groww
+                      </p>
+                      <button class="btn-primary">complete setup</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="emf-lower">
+                  <div class="emf-title">
+                    <h2>videos from groww</h2>
+                  </div>
+                  <div id="emf-videos-thumb-list">
+                    <div id="video1" class="emf-video-thumb">
+                      <img src="https://img.youtube.com/vi/w-UxK4luEwQ/0.jpg" />
+                      <h4>How to do SIP on Groww</h4>
+                    </div>
+                    <div id="video2" class="emf-video-thumb">
+                      <img src="https://img.youtube.com/vi/RxxvY_H7z64/0.jpg" />
+                      <h4>How to do lumpsum investment on Groww</h4>
+                    </div>
+                    <div id="video3" class="emf-video-thumb">
+                      <img src="https://img.youtube.com/vi/RxxvY_H7z64/0.jpg" />
+                      <h4>
+                        How to convert regular mutual funds to direct plan
+                      </h4>
+                    </div>
+                    <div id="video4" class="emf-video-thumb">
+                      <img src="https://img.youtube.com/vi/mgrrT3-S4pc/0.jpg" />
+                      <h4>Compare Mutual funds</h4>
+                    </div>
+                  </div>
+                  <div id="emf-videos-list">
+                    <div id="video1" class="hide">
+                      <div>
+                        <iframe
+                          width="554"
+                          height="310"
+                          src="https://www.youtube.com/embed/w-UxK4luEwQ"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                        <div class="close-player-btn">x</div>
+                      </div>
+                    </div>
+                    <div id="video2" class="hide">
+                      <div>
+                        <iframe
+                          width="554"
+                          height="310"
+                          src="https://www.youtube.com/embed/RxxvY_H7z64"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                        <div class="close-player-btn">x</div>
+                      </div>
+                    </div>
+                    <div id="video3" class="hide">
+                      <div>
+                        <iframe
+                          width="554"
+                          height="310"
+                          src="https://www.youtube.com/embed/jfb8LIdk-Zo"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                        <div class="close-player-btn">x</div>
+                      </div>
+                    </div>
+                    <div id="video4" class="hide">
+                      <div>
+                        <iframe
+                          width="554"
+                          height="310"
+                          src="https://www.youtube.com/embed/mgrrT3-S4pc"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                        <div class="close-player-btn">x</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hide" id="fds">
+              <div class="bigdiv">
+                <div class="fdlist">
+                  <div class="indusfd">
+                    <img
+                      alt="IndusInd Bank"
+                      width="35"
+                      height="35"
+                      src="https://storage.googleapis.com/groww-assets/banking-assets/img/indus-ind.png"
+                    />
+                    <span class="indFDs">IndusInd Bank FDs</span>
+                    <div class="threedivs">
+                      <div class="metrics">
+                        <h2>6:00%</h2>
+                        <hr />
+                        <p>1 Year</p>
+                      </div>
+                      <div class="metrics">
+                        <h2>6:50%</h2>
+                        <hr />
+                        <p>2 Year</p>
+                      </div>
+                      <div class="metrics">
+                        <h2>6:50%</h2>
+                        <hr />
+                        <p>3 Year</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="axisfd">
+                    <img
+                      alt="Axis Bank"
+                      width="35"
+                      height="35"
+                      src="https://assets-netstorage.groww.in/app-assets/others/axisBank.svg"
+                    />
+                    <span class="indFDs">Axis Bank FDs</span>
+                    <div class="threedivs">
+                      <div class="metrics">
+                        <h2>5.40%</h2>
+                        <hr />
+                        <p>2 Year</p>
+                      </div>
+                      <div class="metrics">
+                        <h2>5.25%</h2>
+                        <hr />
+                        <p>2 Year</p>
+                      </div>
+                      <div class="metrics">
+                        <h2>5.25%</h2>
+                        <hr />
+                        <p>1 Year 6 Months</p>
+                      </div>
+                      <div class="metrics">
+                        <h2>5.75%</h2>
+                        <hr />
+                        <p>5 Year</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="selectfd">
+                  <img
+                    width="130"
+                    height="87"
+                    src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/rightSideEmptyState.b2c22cac.svg"
+                  />
+                  <h2>Select a FD</h2>
+                  <p>to view options</p>
+                </div>
+              </div>
 
-    <div id="big">
-      <div id="left">
-        <h1 class="headinggray topheading">Invest anytime,</h1>
-        <h1 class="headingline headinggray">anywhere.</h1>
-        <div class="twolines">
-          <h3 class="gray">Dont worry about which device to use.</h3>
-          <h3 class="gray">Because we're in every one of them.</h3>
-        </div>
-        <div class="one">
-          <img
-            src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/dash.a7e0c55c.svg"
-            class="favicons"
-          />
+              <!-- second div below  -->
 
-          <h3>
-            Stay on top of everything<span
-              ><p class="gray">
-                Keep track of your investments at anytime with Groww.
-              </p></span
-            >
-          </h3>
-        </div>
+              <div class="seconddiv">
+                <div class="fdlist">
+                  <div class="indusfd">
+                    <img
+                      alt="Bajaj Finance Ltd"
+                      width="35"
+                      height="35"
+                      src="https://assets-netstorage.groww.in/app-assets/others/Bajaj_1200x1200px-01.jpeg"
+                    />
+                    <span class="indFDs">Bajaj Finance Ltd FDs</span>
+                    <div class="threedivs">
+                      <div class="metrics">
+                        <h2>5.65%</h2>
+                        <hr />
+                        <p>1 Year</p>
+                      </div>
+                      <div class="metrics">
+                        <h2>6:40%</h2>
+                        <hr />
+                        <p>2 Year</p>
+                      </div>
+                      <div class="metrics">
+                        <h2>6:80%</h2>
+                        <hr />
+                        <p>3 Year</p>
+                      </div>
+                      <div class="metrics">
+                        <h2>6:80%</h2>
+                        <hr />
+                        <p>5 Year</p>
+                      </div>
+                    </div>
+                  </div>
+                  <br />
+                  <br />
+                  <br />
+                  <div class="axisfd">
+                    <img
+                      alt="Equitas Small Finance Bank"
+                      width="35"
+                      height="35"
+                      src="https://assets-netstorage.groww.in/app-assets/others/equitasBank.svg"
+                    />
 
-        <div class="two">
-          <img
-            src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/sync.3ac006aa.svg"
-            class="favicons"
-          />
-          <h3>
-            Always in Sync<span
-              ><p class="gray">
-                Groww will take care of synchronizing data so you can focus on
-                investing.
-              </p></span
-            >
-          </h3>
+                    <span class="indFDs">Equitas Small Finance Bank FDs</span>
+                    <div class="threedivs">
+                      <div class="metrics">
+                        <h2>6.00%</h2>
+                        <hr />
+                        <p>1 Year</p>
+                      </div>
+                      <div class="metrics">
+                        <h2>5.00%</h2>
+                        <hr />
+                        <p>9 Months</p>
+                      </div>
+                      <div class="metrics">
+                        <h2>4.855%</h2>
+                        <hr />
+                        <p>6 Months</p>
+                      </div>
+                      <div class="metrics">
+                        <h2>4.35%</h2>
+                        <hr />
+                        <p>3 Months</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- last div  -->
+              <div class="lastdiv">
+                <h1>About Fixed Deposits</h1>
+                <p>
+                  High interest rate Fixed Deposits are a safe investment
+                  instrument which also generate good returns. When you invest
+                  in a fixed deposit at Groww, the money is safely deposited
+                  into an RBI backed bank or NBFC. All bank deposits are also
+                  backed by deposit insurance up to ₹5 Lakh provided by DICGC, a
+                  wholly owned subsidiary of the RBI.
+                </p>
+                <div class="options">
+                  <div class="left">
+                    <!-- first  -->
+                    <img src="images/secure100.png" />
+                    <h4>100% secure</h4>
+                    <p>Bank FDs are insured upto ₹5 lakhs by RBI</p>
+
+                    <!-- second  -->
+                    <img src="images/zerohassle.png" />
+                    <h4>Zero Hassle</h4>
+                    <p>There is no hassle of opening a new savings account</p>
+
+                    <!-- third  -->
+
+                    <img src="images/nohidden.png" />
+                    <h4>No Hidden charges</h4>
+                    <p>Invest and track your deposits for free</p>
+                  </div>
+                  <div class="right">
+                    <img src="images/intrate.png" />
+                    <h4>High Interest Rates</h4>
+                    <p>
+                      We have tenures with the highest interest rates in the
+                      market
+                    </p>
+
+                    <!-- second  -->
+
+                    <img src="images/banksmany.png" />
+                    <h4>Multiple Banks</h4>
+                    <p>More options at your disposal to choose FDs</p>
+
+                    <!-- third  -->
+
+                    <img src="images/citizensenior.png" />
+                    <h4>Senior Citizen Benefit</h4>
+                    <p>0.5% extra interest rate on all Bank FDs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hide" id="us">US Stocks</div>
+          </div>
         </div>
-      </div>
-      <div id="right">
-        <div class="ioscards">
-          <img
-            alt="iosimage"
-            src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/ios.0a99dcbb.png"
-          />
-        </div>
-        <div class="androidcards">
-          <img
-            alt="androidimage"
-            src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/android.6dfb12ca.png"
-          />
-        </div>
-      </div>
-      <div class="third">
-        <div class="yellowcard">
-          <img
-            alt="yellowimage"
-            src="//assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/web.634ac717.png"
-          />
-        </div>
-      </div>
+      </section>
     </div>
-
-    
+    <div id="footer"></div>
   </body>
 </html>
+<script type="module" src="/scripts/index.js"></script>
