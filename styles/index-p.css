@@ -280,7 +280,7 @@ small a {
     color: initial;
   }
   #p2-options-list {
-    position: static;
+    position: initial;
   }
   .p2-options-content > div {
     margin-top: 100px;

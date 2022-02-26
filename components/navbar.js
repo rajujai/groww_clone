@@ -28,7 +28,7 @@ export function preloginNavbar() {
       </div>
     </div>
     <div class="loginbutton">
-      <button class="login_btn">Login/Register</button>
+      <button class="login_btn" onclick="window.location.href='signup.html'">Login/Register</button>
     </div>
     </div>
     <script src="/scripts/navbar.js"></script>`;
