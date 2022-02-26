@@ -31,3 +31,14 @@ export function videoPlayer() {
         });
     }
 }
+
+export function faq(){
+    let ques = document.getElementsByClassName("faq-q"),
+    l = ques.length;
+    let ans = document.getElementsByClassName("faq-a");
+    for(let i=0;i<l;i++){
+        ques[i].addEventListener("click", ()=>{
+            ans[i].classList.toggle("hide");
+        })
+    }
+}

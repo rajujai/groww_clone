@@ -1,7 +1,7 @@
 import footer from "../components/footer.js";
 import { preLogin, postLogin } from "../components/index.js";
 import contentChanger from "./contentChanger.js";
-import {videoPlayer} from "./contentChanger.js";
+import {videoPlayer, faq} from "./contentChanger.js";
 document.getElementById("footer").innerHTML = footer();
 
 localStorage.setItem("groww-login", true)
@@ -17,3 +17,4 @@ else{
     contentChanger("p2-options-list", "p2-options-content");
 }
 videoPlayer();
+faq();
