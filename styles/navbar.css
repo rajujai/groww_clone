@@ -1,0 +1,120 @@
+/* building the navbar here below   */
+
+.navbar {
+  display: flex;
+  width: 75vw;
+  margin: 0 auto;
+}
+.navbar > img {
+  width: 160px;
+  height: 80px;
+  margin-top: 5px;
+  margin-right: 40px;
+}
+#searchdiv{
+  position: relative;
+}
+#myInput {
+  border-radius: 10px;
+  margin-top: 20px;
+  outline: none;
+  width: 45%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 160px 12px 20px; /*Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+  margin-left: 150px;
+  font-weight: bold;
+}
+
+.myUL {
+  list-style: none;
+  padding: 0;
+  max-height: 100px;
+  margin-left: 150px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+.myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+/* defining login button  */
+.login_btn {
+  color: white;
+  background-color: #00d09c;
+  cursor: pointer;
+  height: 50px;
+  padding: 10px 38px 10px 38px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  justify-content: right;
+  align-items: right;
+}
+
+.loginbutton {
+  margin-left: 50px;
+  margin-top: 18px;
+  justify-content: space-evenly;
+}
+
+/* ---------------- for second div after login  */
+
+.options_post_login {
+  margin-top: 33px;
+  font-weight: normal;
+}
+.leftmargin {
+  margin-left: 20px;
+}
+.navbar_options > img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+}
+.navbar_options {
+  display: flex;
+  width: 200px;
+  margin-top: 20px;
+  height: 50px;
+  justify-content: space-between;
+  margin-left: 100px;
+}
+
+#bell {
+  font-size: 25px;
+  margin-top: 10px;
+  height: 23px;
+}
+#wallet_emoji {
+  margin-top: 10px;
+  font-size: 25px;
+}
+#cart_emoji {
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+#myUL{
+  display: none;
+  position: absolute;
+  left: 0;
+  right: -60px;
+  top: 50px;
+}
+#myInput:focus + #myUL {
+  display: block;
+}
