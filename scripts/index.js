@@ -4,7 +4,7 @@ import contentChanger from "./contentChanger.js";
 import {videoPlayer} from "./contentChanger.js";
 document.getElementById("footer").innerHTML = footer();
 
-// localStorage.setItem("groww-login", true)
+localStorage.setItem("groww-login", true)
 // for changing page content on the basis of login status
 let main = document.getElementById("main");
 if(localStorage.getItem("groww-login")){

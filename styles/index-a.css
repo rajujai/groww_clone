@@ -228,3 +228,128 @@
     text-overflow: ellipsis;
     color: var(--text);
 }
+          /*------------ U.S. STOCK  --------------- */
+          .big img{
+            width: 100%;
+        }
+       .big{
+        
+           width: 70%;
+           height: 800px;
+           margin-top: 15%;
+           margin-left: 5%;
+           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       }
+       .big .top{
+         
+           height: 15%;
+           display: flex;
+   
+       }
+      .big #top_a{
+          
+         
+         
+           height: 20%;
+       }
+    
+       .big .dull{
+           
+           size: 16px;
+   
+       }
+       .big .heading{
+         
+       
+           height: 20%;
+           display: flex;
+           
+       }
+       .big .left{
+           width: 50%;
+         
+           justify-content: space-around;
+       }
+       .big .right{
+           width: 50%;
+          
+       }
+       .big .stoc{
+         
+           height: 20%;
+           display: flex;
+           }
+          .big .pic{
+             
+               width: 22%;
+           }
+           .big .heading{
+          
+           height: 5%;
+           display: flex;
+           margin-top: 3%;
+          
+       }
+       .big .left{
+           width: 50%;
+          
+           font-weight: bolder;
+          
+       }
+       .big .right{
+           width: 10%;
+          
+           padding-left: 10px;
+           color: #00d09c;
+           margin-left: 30%;
+           background-color: #b0fae7;
+           border-radius: 20%;
+           text-align: center;
+           height: 50%;
+           border: none;
+       }
+       .big .stoc>.pic{
+           margin :2%;
+       }
+       .big .bigb{
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+         
+       }
+      .big .bigc{
+          height: 85%;
+          border: 2px solid rgb(0, 17, 255);
+          
+          margin: 2%;
+         
+   height: 60px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      }
+   
+      
+      .big span{
+          color: #00d09c;
+          padding-left: 20%;
+      }
+      .pic :hover,.bigb :hover , .option :hover{
+       transform: scale(1.1);
+      }
+     .big .sectors{
+          margin: 5%;
+      }
+      .big .option{
+         
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          height: 15%;
+          grid-gap: 1%;
+          padding: 2%;
+         
+      }
+      .big .sec{
+          
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+         
+          font-size: 14px;
+          height: 50%;
+      }
