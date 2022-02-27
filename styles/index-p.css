@@ -122,10 +122,6 @@ small a {
 
 /*------------------------------------ media-query section 1 -------------------------------------------- */
 @media screen and (min-width: 480px) {
-  #main {
-    padding-top: 2%;
-    margin: 10vw;
-  }
   .p1-card a {
     font-size: 18px;
   }
@@ -280,7 +276,7 @@ small a {
     color: initial;
   }
   #p2-options-list {
-    position: static;
+    position: initial;
   }
   .p2-options-content > div {
     margin-top: 100px;

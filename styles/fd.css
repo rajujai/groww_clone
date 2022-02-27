@@ -1,0 +1,68 @@
+.bigdiv {
+  width: auto;
+  gap: 20px;
+  height: 550px;
+  display: flex;
+}
+.fdlist {
+  width: 60%;
+  height: 100%;
+}
+.indusfd {
+  width: 100%;
+  height: 50%;
+}
+.threedivs {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  gap: 30px;
+  margin-top: 30px;
+}
+.metrics {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 330px;
+  border-radius: 4px;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+}
+.selectfd {
+  width: 40%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  box-shadow: rgba(153, 28, 28, 0.2) 0px 2px 8px 0px;
+  text-align: center;
+}
+.selectfd > img {
+  margin-top: 230px;
+  margin-left: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.lastdiv {
+  margin-top: 50px;
+  width: 60%;
+  height: 800px;
+}
+
+.options {
+  margin-top: 50px;
+  width: 100%;
+  height: 77%;
+  display: flex;
+}
+.left {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  line-height: 20px;
+}
+.right {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  line-height: 20px;
+}
