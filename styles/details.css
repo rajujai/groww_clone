@@ -51,3 +51,20 @@
 .pro {
   padding: 3%;
 }
+
+
+#marital .input ,#gender .input {
+   border: 1px solid rebeccapurple;
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   grid-template-rows: repeat(2,1fr);
+   grid-gap: 10%;
+   height: 50%;
+   padding-top: 4%;
+   
+ }
+ 
+ #marital .one:hover ,#gender .one:hover{
+  
+   background-color: var(--primaryClr) ;
+ }
