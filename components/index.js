@@ -1365,5 +1365,11 @@ export function postLogin(){
         </div>
     </div>
 </section>
+
 <script src="/scripts/stock.js"></script>`;
+
 }
+
+
+
+

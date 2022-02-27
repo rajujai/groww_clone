@@ -4,6 +4,8 @@ import navbar from "../components/navbar.js";
 import { preloginNavbar } from "../components/navbar.js";
 import contentChanger from "./contentChanger.js";
 import {videoPlayer, faq} from "./contentChanger.js";
+import data from "../components/stock_data.js";
+import {showdata, stockFunction} from "./stock.js";
 document.getElementById("footer").innerHTML = footer();
 
 // for changing page content on the basis of login status
@@ -31,3 +33,7 @@ function addPaths(){
         })
     }
 }
+addPaths();
+
+
+showdata(data());
