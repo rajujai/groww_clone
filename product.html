@@ -51,11 +51,11 @@
             </div>
     
             <div class="e2-equity-num">
-                <div><h3>35.48%</h3></div>
+                <div><h3><span id="roi"></span>%</h3></div>
                 <div><h5>3Y annualised</h5></div>
             </div>
             <div class="e2-equity-num2">
-                <div><h5 >-4.00%</h5></div>
+                <div><h5 >-<span id="onedayroi"></span> %</h5></div>
                 <div><h4>1D</h4></div>
             </div>
             <div class="e2-graph">
@@ -75,11 +75,11 @@
                 <div class="e2-info-fund-one">
                     <div class="e2-info-fund-one-a">
                         <div><h5>NAV:25 Feb 2022</h5></div>
-                        <div style="display: flex;"><span class="iconify" data-icon="icons8:rupee" style="margin-top: 23px;" ></span><h4>161.99</h4></div>
+                        <div style="display: flex;"><span class="iconify" data-icon="icons8:rupee" style="margin-top: 23px;" ></span><h4 id="nav">161.99</h4></div>
                     </div>
                     <div class="e2-info-fund-one-b">
                          <div><h5>MIN.SIP Amount</h5></div>
-                         <div style="display: flex;"><span class="iconify" data-icon="icons8:rupee" style="margin-top: 23px;" ></span><h4>100</h4></div>
+                         <div style="display: flex;"><span class="iconify" data-icon="icons8:rupee" style="margin-top: 23px;" ></span><h4 id="sip"></h4></div>
                     </div>
     
                 </div>
@@ -87,11 +87,11 @@
                 <div class="e2-info-fund-two">
                     <div class="e2-info-fund-one-a">
                         <div><h5>Rating</h5></div>
-                        <div ><h5>NA</h5></div>
+                        <div ><h5 id="rating"></h5></div>
                     </div>
                     <div class="e2-info-fund-one-b">
                          <div><h5>Fund Size</h5></div>
-                         <div style="display: flex;"><span class="iconify" data-icon="icons8:rupee" style="margin-top: 23px;" ></span><h4>7,795.01Cr</h4></div>
+                         <div style="display: flex;"><span class="iconify" data-icon="icons8:rupee" style="margin-top: 23px;" ></span><h4><span id="aum"></span>Cr</h4></div>
                     </div>
                 </div>
             </div>
@@ -133,12 +133,12 @@
                         <div class="e2-monthly-sip-contain-a1">
                             <div><h5>Amount</h5></div>
                         <div style=" display: flex;"><div><span class="iconify" id="e2-icon" data-icon="la:rupee-sign" data-width=></span>
-                        </div> <input type="number" placeholder="0"></div>
+                        </div> <input id="amount" type="number" placeholder="0"></div>
                         </div>
                         <div class="e2-monthly-sip-contain-a2">
                            <div><h5>monthly SIP date</h5></div>
                            <div>
-                            <input type="date" placeholder="4th">
+                            <input type="text" id="date" placeholder="4th">
                         </div>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                     <div class="e2-monthly-bottom">
                         <p>Next SIP installment on 04 of Apr</p>
                         <div class="e2-monthly-bottom-btn">
-                             <div><button class="e2-btn-one"><h5>add to cart</h5></button></div>
+                             <div><button class="e2-btn-one"  id="add-to-cart" ><h5>add to cart</h5></button></div>
                              <div><button class="e2-btn-two"><h5>start sip</h5></button></div>
                         </div>
                   </div>
