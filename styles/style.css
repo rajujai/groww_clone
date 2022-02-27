@@ -1,97 +1,101 @@
-:root{
-    --primaryClr: #00d09c;
-    --primaryClr60: #66e3c4;
-    --primaryClr10: #e5faf5;
-    --secondaryClr: #5367ff;
-    --secondaryClr130: #98a4ff;
-    --secondaryClr60: #98a4ff;
-    --secondaryClr30: #eef0ff;
-    --growwYellow: #ffb61b;
-    --growwYellow10: #fff5e0;
-    --growwYellow05: rgba(255,182,27,0.05);
-    --growwRed: #eb5b3c;
-    --growwRed10: #fae9e5;
-    --growwRed05: rgba(235,91,60,0.05);
-    --border: #ecedef;
-    --iconLight: #b0b2ba;
-    --iconMedium: #dddee1;
-    --iconStrong: #ecedef;
-    --boxShadow: rgba(0,0,0,0.1);
-    --text130: #44475b;
-    --text: #44475b;
-    --subText: #7c7e8c;
-    --subText50: #b0b2ba;
-    --subText70: #ecedef;
-    --primaryBg: #fff;
-    --secondaryBg: #fff;
-    --tertiaryBg: #ecedef;
-    --quaternaryBg: #f6f6f7;
-    --preloaderBg: #f6f6f7;
-    --rippleNormal: rgba(0,0,0,0.1);
-    --constantWhite: #fff;
-    --constantSecondaryClr10: #f6f6f7;
-    --cardBackground: #fff;
-    --constantGrowwYellow150: #d2ab66;
-    --secondaryClr150: #1e2232;
+:root {
+  --primaryClr: #00d09c;
+  --primaryClr60: #66e3c4;
+  --primaryClr10: #e5faf5;
+  --secondaryClr: #5367ff;
+  --secondaryClr130: #98a4ff;
+  --secondaryClr60: #98a4ff;
+  --secondaryClr30: #eef0ff;
+  --growwYellow: #ffb61b;
+  --growwYellow10: #fff5e0;
+  --growwYellow05: rgba(255, 182, 27, 0.05);
+  --growwRed: #eb5b3c;
+  --growwRed10: #fae9e5;
+  --growwRed05: rgba(235, 91, 60, 0.05);
+  --border: #ecedef;
+  --iconLight: #b0b2ba;
+  --iconMedium: #dddee1;
+  --iconStrong: #ecedef;
+  --boxShadow: rgba(0, 0, 0, 0.1);
+  --text130: #44475b;
+  --text: #44475b;
+  --subText: #7c7e8c;
+  --subText50: #b0b2ba;
+  --subText70: #ecedef;
+  --primaryBg: #fff;
+  --secondaryBg: #fff;
+  --tertiaryBg: #ecedef;
+  --quaternaryBg: #f6f6f7;
+  --preloaderBg: #f6f6f7;
+  --rippleNormal: rgba(0, 0, 0, 0.1);
+  --constantWhite: #fff;
+  --constantSecondaryClr10: #f6f6f7;
+  --cardBackground: #fff;
+  --constantGrowwYellow150: #d2ab66;
+  --secondaryClr150: #1e2232;
 }
-:root [data-theme=dark] {
-    --secondaryClr150: #1e2232;
-    --constantGrowwYellow150: #d2ab66;
-    --constantText: #44475b;
-    --constantText120: #191c27;
-    --constantSubText10: #636464;
-    --constantTransparent: transparent;
-    --constantHalfTransparent: rgba(0,0,0,0.5);
-    --constantSecondaryClr180: #2a2a2a;
+:root [data-theme="dark"] {
+  --secondaryClr150: #1e2232;
+  --constantGrowwYellow150: #d2ab66;
+  --constantText: #44475b;
+  --constantText120: #191c27;
+  --constantSubText10: #636464;
+  --constantTransparent: transparent;
+  --constantHalfTransparent: rgba(0, 0, 0, 0.5);
+  --constantSecondaryClr180: #2a2a2a;
 }
-body{
-    background: var(--primaryBg)!important;
-    color: var(--text)!important;
-    margin: 0;
-    box-sizing: border-box;
-    font-weight: 400;
-    font-family: Roboto,system-ui;
+body {
+  background: var(--primaryBg) !important;
+  color: var(--text) !important;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: Roboto, system-ui;
 }
-b{
-    font-weight: bold;
+b {
+  font-weight: bold;
 }
-.text-center{
-    text-align: center;
+.text-center {
+  text-align: center;
 }
-.no-border{
-    border: none;
-    outline: none;
+.no-border {
+  border: none;
+  outline: none;
 }
-.btn-primary{
-    border: none;
-    outline: none;
-    background-color: var(--primaryClr);
-    color: var(--primaryBg);
-    padding: 4% 14%;
-    font-size: 1em;
-    font-weight: 500;
-    border-radius: 5px;
+.btn-primary {
+  border: none;
+  outline: none;
+  background-color: var(--primaryClr);
+  color: var(--primaryBg);
+  padding: 4% 14%;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 5px;
 }
-.bbtm{
-    border-bottom: 5px solid var(--primaryClr);
+.bbtm {
+  border-bottom: 5px solid var(--primaryClr);
 }
-.btn-primary:hover{
-    background-color: #26d7ab;
+.btn-primary:hover {
+  background-color: #26d7ab;
 }
-.l-only{
-    display: none;
+.l-only {
+  display: none;
 }
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
-.show{
+.show {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .l-only {
     display: block;
-}
-@media screen and (min-width:480px) {
-    .l-only{
-        display: block;
-    }
-    .s-only{
-        display: none;
-    }
+  }
+  .s-only {
+    display: none;
+  }
+  #main {
+    width: 75vw;
+    margin: 0 auto;
+  }
 }

@@ -1,0 +1,35 @@
+.cart{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin-top: 8vh;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.cart-list>div{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.33px;
+    color: var(--text);
+}
+.cart-item{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    /* box-shadow: ; */
+}
+.cart-item-details{
+    display: flex;
+    justify-content: space-between;
+}
+.remove-btn{
+    display: none;
+}
+
+
+
+
+
+.payment{
+    border: 2px solid black;
+}

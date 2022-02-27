@@ -1,8 +1,4 @@
 /* after login */
-#main {
-  width: 75vw;
-  margin: 0 auto;
-}
 .a1-options ul {
   list-style: none;
   display: flex;
@@ -236,7 +232,7 @@
   display: block;
 }
 .big {
-  margin-left: 5%;
+  /* margin-left: 5%; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
@@ -286,7 +282,6 @@
   grid-template-columns: repeat(2, 1fr);
 }
 .big .bigc {
-  border: 2px solid rgb(0, 17, 255);
   margin: 2%;
   height: 60px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -301,7 +296,7 @@
 .pic :hover,
 .bigb :hover,
 .option :hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 .big .sectors {
   margin: 5%;
