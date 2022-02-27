@@ -1,24 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=Device-width>, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/pan.css">
-
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/details.css">
 </head>
-<!-- <link rel="stylesheet" href="./styles/signup.css"> -->
-
 <body>
-    <img class="gr" src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg">
-    <div class="school">
-        <div class="left">PAN Number</div>
-        <div class="right">
-            <input type="text" id="text" name="num" required
-            minlength="4" maxlength="18" size="40" placeholder="Pan Number"><br>
-            <button class="pro">PROCEED</button>
+    <div class="container">
+        <div class="page hide" id="pan">
+            <img class="logo" src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg">
+            <div class="form">
+                <div class="label">PAN Number</div>
+                <div class="input">
+                    <input type="text" id="text" name="num" required minlength="4" maxlength="18" size="40" placeholder="Pan Number"><br>
+                    <button class="pro">PROCEED</button>
+                </div>
+            </div>
+        </div>
+        <div class="page" id="mobile">
+            <img class="logo" src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg">
+            <div class="form">
+                <div class="label">
+                    <div class="label-title">Phone Number</div>
+                    <div class="label-desc">Verify phone number for your KYC</div>
+                </div>
+                <div class="input">
+                    <input type="text" id="text" name="num" required minlength="4" maxlength="18" size="40" placeholder="Phone Number"><br>
+                    <button class="btn-primary pro">PROCEED</button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
 </html>

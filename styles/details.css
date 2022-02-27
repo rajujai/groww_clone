@@ -1,45 +1,53 @@
-.school{
-    width: 70%;
-    /* border: 1px solid red; */
-    display: flex;
-    height: 500px;
-    margin :auto;
+.container {
+  background: url("../images/bgLight.037b8aed.svg");
+  background-size: cover;
 }
-.school .left{
-    /* border: 1px solid blue; */
-    margin-top: 15%;
-    font-size: 300%;
-    width: 40%;
-    padding-left: 2%;
-    font-weight: 500;
+.page {
+  width: 80%;
+  max-width: 1100px;
+  height: calc(100vh - 40px);
+  margin: auto;
+  padding: 20px 0;
 }
-.school .right{
-   /* border: 1px solid purple; */
-   margin-top: 10%;
-   width: 70%;
-   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-   height: 50%;
-   border-radius: 3% ;
+.logo {
+  width: 160px;
+  height: 40px;
 }
-.school input{
-   height: 50px;
-   width: 80%;
-   border: none;
-   border-bottom: 2px solid #00d09c;
-   background-color: rgb(238, 234, 234);
-   padding-left: 5%;
-   margin-left: 10%;
-   margin-top: 10%;
-   font-size: x-large;
-   border-radius: 5%;
-
+.page .form {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 5%;
+  margin-top: 10%;
 }
-.school .pro{
-   background-color: #00d09c;
-   color: white;
-   margin: 4% 0% 0% 10%;
-   width: 85%;
-   height: 35px;
-   border: none;
-   border-radius: 3%;
-    }
+.form .label {
+  font-weight: 500;
+  text-align: right;
+}
+.label>div{
+   padding: 4% 0;
+}
+.label-title {
+  font-size: 300%;
+}
+.form .input {
+  background-color: var(--primaryBg);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+}
+.form input {
+  border: none;
+  background-color: var(--quaternaryBg);
+  border-radius: 5px 5px 0 0;
+  border-bottom: 3px solid var(--primaryClr);
+  outline: none;
+  font-size: 16px;
+  letter-spacing: .01em;
+  line-height: 160%;
+  padding: 3%;
+}
+.pro {
+  padding: 3%;
+}
