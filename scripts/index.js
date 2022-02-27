@@ -22,3 +22,12 @@ else{
     //this function changes the content of page by clicking on options
     contentChanger("p2-options-list", "p2-options-content");
 }
+function addPaths(){
+    let list = document.getElementById("ae-card-list").children;
+    for(let div of list){
+        div.addEventListener("click", ()=>{
+            localStorage.setItem("groww-product", div.id);
+            window.location.href = "product.html";
+        })
+    }
+}
