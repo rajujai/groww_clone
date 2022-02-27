@@ -1,0 +1,45 @@
+.school{
+    width: 70%;
+    /* border: 1px solid red; */
+    display: flex;
+    height: 500px;
+    margin :auto;
+}
+.school .left{
+    /* border: 1px solid blue; */
+    margin-top: 15%;
+    font-size: 300%;
+    width: 40%;
+    padding-left: 2%;
+    font-weight: 500;
+}
+.school .right{
+   /* border: 1px solid purple; */
+   margin-top: 10%;
+   width: 70%;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   height: 50%;
+   border-radius: 3% ;
+}
+.school input{
+   height: 50px;
+   width: 80%;
+   border: none;
+   border-bottom: 2px solid #00d09c;
+   background-color: rgb(238, 234, 234);
+   padding-left: 5%;
+   margin-left: 10%;
+   margin-top: 10%;
+   font-size: x-large;
+   border-radius: 5%;
+
+}
+.school .pro{
+   background-color: #00d09c;
+   color: white;
+   margin: 4% 0% 0% 10%;
+   width: 85%;
+   height: 35px;
+   border: none;
+   border-radius: 3%;
+    }
