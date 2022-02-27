@@ -1,55 +1,95 @@
-let arr = [
-    {
-        id="axis",
-        url="https://groww.in/images/partners/axis_groww.svg",
-        name="Axis small cap fund direct growth",
-        roi=32.74,
-        onedayroi=3.45,
-        nav=64.49,
-        rating=5,
-        sip=500,
-        aum=8410.88
+import getElementData from "/components/product_data.js"
+
+import navbar from "/components/navbar.js";
+
+import footer from "/components/footer.js";
+
+document.getElementById("navbar").innerHTML = navbar();
+document.getElementById("footer").innerHTML = footer();
 
 
-    },
-    {
-        id="icici",
-        url="https://groww.in/images/partners/icici_groww.svg",
-        name="ICICI prudential technology direct growth",
-        roi=36.37,
-        onedayroi=2.34,
-        nav=161.99,
-        rating=NA,
-        sip=100,
-        aum=7795.10
 
 
-    },
-    {
-        id="tata",
-        url="https://groww.in/images/partners/tata_groww.svg",
-        name="tata digital india fund direct growth",
-        roi=34.88,
-        onedayroi=2.94,
-        nav=39.32,
-        rating=NA,
-        sip=150,
-        aum=5039.40
+function eGRaph() {
+    console.log("ok")
+    let div = document.getElementsByClassName("e2-graph");
+    div.innerHTML = ""
+    let img = document.createElement("img");
+    img.src = "./images/1M.png";
+    div.append(img);
+}
 
 
-    },
-    {
-        id="mirae",
-        url="https://groww.in/images/partners/mirae_groww.svg",
-        name="Mirae Asset tax direct growth",
-        roi=23.13,
-        onedayroi=2.58,
-        nav=39.01,
-        rating=5,
-        sip=500,
-        aum=10971.85
 
+const fun = (optionsId, contentId) => {
+    let list = document.getElementById(optionsId).children,
+        l = list.length;
+    let content = document.getElementById(contentId).children;
+    for (let item of list) {
+        item.addEventListener("click", () => {
+
+            for (let i = 0; i < l; i++) {
+                content[i].classList.add("hide");
+                // list[i].classList.remove("bbtm");
+            }
+            content[item.id].classList.remove("hide");
+
+            // item.classList.add("bbtm");
+        });
+    }
+    // console.log(list,content);
+}
+
+fun("e2-monthly-sip-nav-one", "e2-monthly-sip-nav-content");
+
+
+//   getting data from  product data file
+
+
+// console.log(getElementData())
+
+
+
+
+
+let data = getElementData();
+// data=JSON.parse(data);
+console.log(data)
+
+//  showCompdetails(data) ;
+
+
+// localStorage.setItem('product_data',JSON.stringify(data));
+
+console.log(data[0])
+function showCompdetails(data) {
+    
+    
+    data.forEach(ele =>{
+
+  console.log(ele)
+
+        //    console.log(ele.name);
+        
+        
+      
+
+        // let title=document.createElement("p");
+
+        // title.innerText = ele.name;
+        // console.log(title.innerHTML)
+        
+        // contaner.append(title);
+    })
+
+   
 
     }
+//  showCompdetails(data) ;
 
-]
+//  let res= JSON.parse(localStorage.getItem(product_data.id));
+//  console.log(res)
+
+if(id==res){
+
+}

@@ -875,29 +875,29 @@ export function postLogin(){
                                 <h2>Popular Funds</h2>
                                 <p>screener</p>
                             </div>
-                            <div class="ae-card-list">
-                                <div class="ae-card">
+                            <div  class="ae-card-list" id="ae-card-list">
+                                <div id="icici" class="ae-card">
                                     <img src="https://groww.in/images/partners/icici_groww.svg" class="ae-logo">
                                     <p class="ae-para1">ICICI Prudential Technology Direct Plan Growth</p>
                                     <p class="ae-para2">37.7%
                                         <span>(3Y)</span>
                                     </p>
                                 </div>
-                                <div class="ae-card">
+                                <div id="axis" class="ae-card">
                                     <img src="https://groww.in/images/partners/axis_groww.svg" class="ae-logo">
                                     <p class="ae-para1">Axis Small Cap Fund Direct Growth</p>
                                     <p class="ae-para2">33.1%
                                         <span>(3Y)</span>
                                     </p>
                                 </div>
-                                <div class="ae-card">
+                                <div id="tata" class="ae-card">
                                     <img src="https://groww.in/images/partners/tata_groww.svg" class="ae-logo">
                                     <p class="ae-para1">Tata Digital India Fund Direct Growth</p>
                                     <p class="ae-para2">36.3%
                                         <span>(3Y)</span>
                                     </p>
                                 </div>
-                                <div class="ae-card">
+                                <div id="mirae" class="ae-card">
                                     <img src="https://groww.in/images/partners/mirae_groww.svg" class="ae-logo">
                                     <p class="ae-para1">Mirae Asset Tax Saver Fund Direct Growth</p>
                                     <p class="ae-para2">24.5%
@@ -1365,5 +1365,11 @@ export function postLogin(){
         </div>
     </div>
 </section>
+
 <script src="/scripts/stock.js"></script>`;
+
 }
+
+
+
+
